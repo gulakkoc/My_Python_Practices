@@ -1,0 +1,20 @@
+if __name__ == '__main__':
+    
+    l = []
+    scores = set()
+    names = []
+    
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        l.append([name,score])
+        scores.add(score)
+    
+    b = sorted (scores)[1]
+    
+    for name,score in l :
+        if score == b:
+            names.append(name)
+            
+    for i in sorted(names):
+        print (i, end = '\n')
