@@ -1,0 +1,13 @@
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+        for i in digits:
+            if digits[0] != 0:
+          
+                string = [str(i) for i in digits]
+                new_str = "".join(string)
+                new_int = int(new_str)
+                last_int = new_int+1
+                return list(map(int, str(last_int)))
+            else :
+                digits[0] = 1
+                return digits
