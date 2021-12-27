@@ -10,4 +10,4 @@ class Solution:
                 return list(map(int, str(last_int)))
             else :
                 digits[0] = 1
-                return digits    
+                return digits      
