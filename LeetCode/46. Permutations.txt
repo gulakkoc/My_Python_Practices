@@ -1,4 +1,4 @@
 class Solution:
     import itertools
     def permute(self, nums: List[int]) -> List[List[int]]:
-        return list(itertools.permutations(nums))
+        return list(itertools.permutations(nums))  
